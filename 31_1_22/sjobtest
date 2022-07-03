@@ -1,0 +1,9 @@
+#!/bin/bash
+#SBATCH --job-name=arya01
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=4
+#SBATCH --partition=vgpu
+#SBATCH --gres=gpu:1
+conda activate ~/torch
+python3 /home/Student/s4606685/31_1_22/weight_Script.py
